@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JOINT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+	/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+	function toggleMenu() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+
+</script>
+
+
+
+</head>
+
+<body>
+	<div class="site_wrapper">
+		<a name="top"></a>
+
+		<div class="back_topnav"></div> 
+		<!-- Top Navigation Menu -->
+		<div class="topnav_wrapper">
+			<div class="topnav">
+				<div class="topnav_icon">
+				  	<a href="#home" class="active top_title_icon">☙☙☙title</a><!--☙☙☙-->
+				  	<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+				    	<i class="fa fa-bars"></i>
+				  	</a>
+			  	</div>
+			</div>
+
+			<div id="myLinks" class="topnav topnav_menu" style="display: none;text-align: right;">
+			    	<a href="#top" onclick="toggleMenu()">home</a>
+			  		<a href="#section_1" onclick="toggleMenu()">art</a>
+			    	<a href="#section_2" onclick="toggleMenu()">sound</a>
+			    	<a href="#section_3" onclick="toggleMenu()">education</a>
+			    	<a href="#section_4" onclick="toggleMenu()">web</a>
+			    	<a href="#section_5" onclick="toggleMenu()">about</a>
+			  	</div>
+
+
+		</div>
+		<br>
+
+		<!--<section>-->
+			<!--
+			<div id="home" class="placeholder_img" style="overflow: hidden;"><video autoplay="true" mute muted loop style="width: 111%;"> <source src="img/cliplampa.mp4" type="video/mp4"></video></div>
+			-->
+			<div id="home" class="placeholder_img" style="overflow: hidden;padding-top:0;"><video autoplay="true" mute muted loop> <source src="img/ig4_low.mp4" type="video/mp4"></video></div>
+
+			<input id="toggle" type="checkbox" checked class="toggle">
+			<label for="toggle"></label>
+			<div class="expand">
+				<p class="text_content_p1">Text about my general endeavours with a focus on arty stuff and <a href="#">a link</a> or <a href="#">many links</a> to some projects.</p>
+			</div>
+
+			<div class="placeholder_img"><video autoplay="true" mute muted loop> <source src="img/piedralobos.mp4" type="video/mp4"></video></div>
+
+			<!-- -->
+
+			<div id="section_1" class="section_end"><div class="end_element">&nbsp;</div></div>
+
+			<div id="art"></div>
+			
+
+			<div class="placeholder_img"><video autoplay="true" mute muted loop> <source src="img/incas_arboles_low.mp4" type="video/mp4"></video></div>
+
+			<input id="toggle3" type="checkbox" checked class="toggle">
+			<label for="toggle3"></label>
+			<div class="expand">
+				<p class="text_content_p1">Contenido sobre los <a href="#">INCAS</a>.</p>
+			</div>
+
+			<!-- -->
+
+			<div id="section_2" class="section_end"><div class="end_element">&nbsp;</div></div>
+
+			<div id="sound"></div>
+			<div class="placeholder_img"><video autoplay="true" mute muted loop> <source src="img/IG2_02.mp4" type="video/mp4"></video></div>
+
+			<input id="toggle5" type="checkbox" checked class="toggle">
+			<label for="toggle5"></label>
+			<div class="expand">
+				<p class="text_content_p1">Sample text to fill this space with content.</p>
+			</div>
+
+			<!-- -->
+
+			<div id="section_3" class="section_end"><div class="end_element">&nbsp;</div></div>
+
+			<div id="education"></div>
+			<div class="placeholder_img"><video autoplay="true" mute muted loop> <source src="img/zille_processing_uvm.mp4" type="video/mp4"></video></div>
+
+			<input id="toggle7" type="checkbox" checked class="toggle">
+			<label for="toggle7"></label>
+			<div class="expand">
+				<p class="text_content_p1">Sample text to fill this space with content.</p>
+			</div>
+
+			<!-- -->
+
+			<div id="section_4" class="section_end"><div class="end_element">&nbsp;</div></div>
+
+			<div id="web"></div>
+			<div class="placeholder_img"><img src="img/interface1.png"></div>
+
+			<input id="toggle9" type="checkbox" checked class="toggle">
+			<label for="toggle9"></label>
+			<div class="expand">
+				<p class="text_content_p1">I have been a designer at <a href="#">plinga</a>, <a href="#">home24</a> and <a href="#">bookingkit</a>.</p>
+			</div>
+
+			<!-- -->
+
+			<div id="section_5" class="section_end"><div class="end_element">&nbsp;</div></div>
+
+			<div id="art"></div>
+			<div class="placeholder_img"><img src="img/image.png"></div>
+
+			<input id="toggle11" type="checkbox" checked class="toggle">
+			<label for="toggle11"></label>
+			<div class="expand">
+				<p class="text_content_p1">Sample text to fill this space with content.</p>
+			</div>
+
+		<!--</section>-->
+
+	</div>
+
+	<footer>
+		<p class="text_content_p1">no copyright whatsoever</p>
+	</footer>
+
+</body>
+
+</html>
