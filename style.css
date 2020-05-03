@@ -84,6 +84,22 @@ body {
   color: white;
 }
 
+.topnav_bottom_wrapper {
+	width: 100%;
+	height:4px;
+	background-color: white;
+}
+
+.topnav_bottom_line {
+	width:30%;
+	margin:0 auto;
+	text-align:center;
+	height: 4px;
+	background-color: black;
+	/*border-bottom: 4px solid black*/
+}
+
+
 .placeholder_img {
 	background-color: #ffffff;
 	display: flex;
@@ -173,6 +189,8 @@ body {
 }
 
 
+
+
 /*********************************/
 
 
@@ -253,6 +271,10 @@ footer {
 		height: 40px;
 	}
 
+	.topnav_bottom_line {
+	width:100%;
+	}
+
 	.text_content_p1 {
 		font-size: 24px;
 	}
@@ -307,6 +329,10 @@ footer {
 		display:flex;
 		flex-direction:row;
 		justify-content:space-between;
+	}
+
+	.topnav_bottom_line {
+	width:30%;
 	}
 
 	.top_title_icon {
