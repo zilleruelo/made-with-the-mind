@@ -293,6 +293,10 @@ footer {
     	/*animation: btow 5s infinite;*/
 	}
 
+	.first_img_mob {
+		padding-top: 40px;
+	}
+
 }
 
 /*************************/
@@ -338,6 +342,10 @@ footer {
 	.top_title_icon {
     	padding: 12px 10px;
     	margin-left: 0%;
+	}
+
+	.first_img_mob {
+		padding-top: 0px;
 	}
 
 	.placeholder_img img {
