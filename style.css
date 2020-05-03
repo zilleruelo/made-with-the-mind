@@ -297,6 +297,14 @@ footer {
 		padding-top: 40px;
 	}
 
+	.text_content_p1 a {
+	color: #0c6aa4;
+	}
+
+	.text_content_p1 a:visited {
+		color: #0c6aa4;
+	}
+
 }
 
 /*************************/
@@ -351,5 +359,14 @@ footer {
 	.placeholder_img img {
 		width: 100%;
 	}
+
+	.text_content_p1 a {
+	text-decoration: underline double;
+	color: #073c5d;
+}
+
+	.text_content_p1 a:visited {
+	color: #073c5d;
+}
 
 }
