@@ -144,6 +144,10 @@ body {
 	color: #073c5d;
 }
 
+.edu_list {
+	padding-bottom: 16px;
+}
+
 .section_end {
 	width:100%;
 	height: 60px;
@@ -363,10 +367,14 @@ footer {
 	.text_content_p1 a {
 	text-decoration: underline double;
 	color: #073c5d;
-}
+	}
 
 	.text_content_p1 a:visited {
 	color: #073c5d;
-}
+	}
+
+	.edu_text {
+	font-size: 20px;
+	}
 
 }
