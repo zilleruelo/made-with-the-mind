@@ -1,0 +1,124 @@
+<!-- HOME-FRONT PAGE -->
+
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #000000;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.centeredstuff {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* Create four equal columns that sits next to each other */
+/*.column {
+  -ms-flex: 25%; /* IE10 */
+/*  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}*/
+
+.column {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 30px;
+  /*margin: 0 1px;*/
+}
+
+.column img {
+  margin-top: 60px;
+  vertical-align: middle;
+  width: 100%;
+  min-width: 100px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/*
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+*/
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 720px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+<!--
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+  -->
+</div>
+
+<div class="centeredstuff">
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <a href="arlecchino.html"><img src="images/arlecchino/1.jpeg" style="width:100%"></a>
+    <a href="aprosodia.html"><img src="images/aprosodia/1.jpg" style="width:100%"></a>
+    <a href="loc.html"><img src="images/loc/1.jpg" style="width:100%"></a>
+    <a href="glory.html"><img src="images/glory/1.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="liliom.html"><img src="images/liliom/1.jpg" style="width:100%"></a>
+    <a href="wolfskind"><img src="images/wolfskind/1.jpg" style="width:100%"></a>
+    <a href="herat.html"><img src="images/herat/1.jpg" style="width:100%"></a>
+    <a href="heimkommen.html"><img src="images/heimkommen/1.jpg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="dreiwuensche.html"><img src="images/dreiwuensche/1.jpeg" style="width:100%"></a>
+    <a href="toddotcom.html"><img src="images/toddotcom/1.jpeg" style="width:100%"></a>
+    <a href="weihnachtsoratorium.html"><img src="images/weihnachtsoratorium/1.jpeg" style="width:100%"></a>
+    <a href="mer.html"><img src="images/mer/1.jpeg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="ranas.html"><img src="images/ranas/1.jpeg" style="width:100%"></a>
+    <a href="searrienda.html"><img src="images/searrienda/1.jpeg" style="width:100%"></a>
+    <a href="region16.html"><img src="images/region16/1.jpeg" style="width:100%"></a>
+    <a href="intirana.html"><img src="images/intirana/1.jpeg" style="width:100%"></a>
+  </div>
+  <div class="column">
+    <a href="carminaburana.html"><img src="images/carminaburana/1.jpeg" style="width:100%"></a>
+    <a href="eiskoenigin.html"><img src="images/eiskoenigin/1.jpeg" style="width:100%"></a>
+    <a href="caleuche.html"><img src="images/caleuche/1.jpeg" style="width:100%"></a>
+    <a href="odilo.html"><img src="images/odilo/1.jpeg" style="width:100%"></a>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

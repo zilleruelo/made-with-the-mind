@@ -1,0 +1,115 @@
+<!--APROSODIA Y OBRAS-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="header">
+  <!--<h1>Chania</h1>-->
+</div> 
+
+
+<div class="row">
+  <div class="col-1">
+    <h3>←</h3>
+  </div>
+  <div class="col-3 menu">
+    <h1>Das Leben ohne Chris</h1>
+    <p>Busoni</p>
+  </div>
+
+  <div class="col-7">
+    <p>2009 Musical<br>
+        Inszenierung: Peter Lund // Musikalische Leitung: Hans-Peter Kirchberg // Bühnenbild: Ulrike Reinhard // Kostümbild: Claudio Aguirre, Andrea Schmid</p>
+    <p>Das Leben ohne Chris wurde speziell für Absolventen der Universität der Künste Berlin geschrieben, an der Autor und Regisseur Peter Lund als Professor tätig ist. Die Uraufführung fand aufgrund einer schon lange bestehenden Kooperation der UDK mit der Neuköllner Oper statt. Die Uraufführung fand dort am 2. April 2009 statt.</p>
+        <!--
+        <img src="https://media.comicbook.com/2019/06/rei-eva-1175988.jpeg" style="width:100%"> -->
+        
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <!--<div class="numbertext">1 / 4</div>-->
+  <img src="images/loc/1.jpg" style="width:100%">
+  <!--<div class="text">Caption Text</div>-->
+</div>
+
+<div class="mySlides fade">
+  <!--<div class="numbertext">2 / 4</div>-->
+  <img src="images/loc/2.jpg" style="width:100%">
+  <!--<div class="text">Caption Two</div>-->
+</div>
+
+<div class="mySlides fade">
+  <!--<div class="numbertext">3 / 4</div>-->
+  <img src="images/loc/3.jpg" style="width:100%">
+  <!--<div class="text">Caption Three</div>-->
+</div>
+
+<div class="mySlides fade">
+  <!--<div class="numbertext">4 / 4</div>-->
+  <img src="images/loc/4.jpg" style="width:100%">
+  <!--<div class="text">Caption Four</div>-->
+</div>
+
+<div class="mySlides fade">
+  <!--<div class="numbertext">4 / 4</div>-->
+  <img src="images/loc/5.jpg" style="width:100%">
+  <!--<div class="text">Caption Four</div>-->
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+-->
+        
+  </div>
+  <div class="col-1">
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
