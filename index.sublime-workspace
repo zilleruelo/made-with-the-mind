@@ -1,0 +1,225 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"ma-",
+				"margin-top\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/felipe/Documents/FelipeWeb/made-with-the-mind/index.html",
+		"/Users/felipe/Desktop/face.svg",
+		"/Users/felipe/Desktop/test_ae2.jsx",
+		"/Users/felipe/Desktop/text.txt",
+		"/Users/felipe/Downloads/drive-download-20211210T163009Z-001/Json file/C1_EN_TT_s9x16_7s_009413_R2_HERO.json",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/wolfskind.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/weihnachtsoratorium.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/toddotcom.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/searrienda.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/region16.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/ranas.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/odilo.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/mer.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/loc.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/liliom.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/intirana.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/herat.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/heimkommen.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/glory.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/eiskoenigin.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/dreiwuensche.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/carminaburana.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/caleuche.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/aprosodia.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/arlecchino copy.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/index copy.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/style-backup.css",
+		"/Users/felipe/Documents/FelipeWeb/made-with-the-mind/style.css",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/arlecchino.html",
+		"/Users/felipe/Desktop/TRABAJO/WEB CLAUDIO/WEBSITE/works.html",
+		"/Users/felipe/Desktop/index.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
