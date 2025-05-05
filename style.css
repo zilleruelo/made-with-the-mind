@@ -99,6 +99,14 @@ body {
 	/*border-bottom: 4px solid black*/
 }
 
+.separator_line {
+	width:30%;
+	margin:0 auto;
+	text-align:center;
+	height: 4px;
+	background-color: black;
+}
+
 
 .placeholder_img {
 	background-color: #ffffff;
