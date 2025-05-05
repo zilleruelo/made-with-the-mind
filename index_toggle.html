@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Felipe Z</title>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap" rel="stylesheet"/>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<script type="text/javascript">
+	/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+	function toggleMenu() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+
+</script>
+<script>
+function toggleLanguage() {
+  var enElements = document.querySelectorAll('.lang-en');
+  var esElements = document.querySelectorAll('.lang-es');
+  var currentLang = document.getElementById('langToggle').textContent;
+
+  if (currentLang === 'ES') {
+    // Mostrar español
+    enElements.forEach(el => el.style.display = 'none');
+    esElements.forEach(el => el.style.display = 'inline');
+    document.getElementById('langToggle').textContent = 'EN';
+  } else {
+    // Mostrar inglés
+    enElements.forEach(el => el.style.display = 'inline');
+    esElements.forEach(el => el.style.display = 'none');
+    document.getElementById('langToggle').textContent = 'ES';
+  }
+}
+</script></head>
+<body>
+<div class="site_wrapper">
+<a name="top"></a>
+<div class="back_topnav"></div>
+<!-- Top Navigation Menu -->
+<div class="topnav_wrapper">
+<div class="topnav">
+<div class="topnav_icon">
+<a class="active top_title_icon" href="#home">☙☙☙ Felipe Z.</a><!--☙☙☙-->
+<!--<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+				    	<i class="fa fa-bars"></i>
+				  	</a>-->
+<button id="langToggle" onclick="toggleLanguage()" style="font-family: 'Alata'; font-size: 20px; background: none; border: none; cursor: pointer;">ES</button></div>
+</div>
+<div class="topnav topnav_menu" id="myLinks" style="display: none;text-align: right;">
+<a href="#top" onclick="toggleMenu()">home</a>
+<a href="#section_1" onclick="toggleMenu()">art</a>
+<a href="#section_2" onclick="toggleMenu()">sound</a>
+<a href="#section_3" onclick="toggleMenu()">education</a>
+<a href="#section_4" onclick="toggleMenu()">web</a>
+<a href="#section_5" onclick="toggleMenu()">about</a>
+</div>
+<div class="topnav_bottom_wrapper">
+<div class="topnav_bottom_line"></div>
+</div>
+</div>
+<br/>
+<div class="placeholder_img first_img_mob" id="home" style="overflow: hidden;"><video autoplay="true" loop="" mute="" muted=""> <source src="img/ig4_low.mp4" type="video/mp4"/></video></div>
+<!--Text about my general endeavours with a focus on arty stuff and <a href="#">a link</a> or <a href="#">many links</a> to some projects.-->
+<p class="text_content_p1"><span class="lang-en">I'm an interdisciplinarian with a background in arts, creative technologies and critical thinking. Specialized in how Artificial Intelligence can be used to fuel creative processes, I live and work in Berlin.</span><span class="lang-es" style="display:none;">Soy un interdisciplinario con formación en artes, tecnologías creativas y pensamiento crítico.</span></p>
+<div class="separator_line"></div>
+<p class="text_content_p1">CURRENT PROJECTS:</p>
+<p class="text_content_p1">
+<a href="https://taupe-pithivier-b95cb5.netlify.app/" target="_blank">AI coded: TB-303 Triple Synth</a><br/>
+<a href="https://genuine-pavlova-8639a3.netlify.app/" target="_blank">AI coded: InfinyAcid-030</a><br/>
+<a href="https://www.instagram.com/coherentcomics/" target="_blank">AI generated comics</a></p>
+<div class="separator_line"></div>
+<p class="text_content_p1">Currently I'm the Production Manager for the EMEA region at <a href="https://www.shuttlerock.com" target="_blank">Shuttlerock</a>.</p>
+<div class="placeholder_img"><img src="img/ace_of_calix_square.jpg"/></div>
+<p class="text_content_p1">Before that, I was the Digital Art Director at <a href="https://weberei.com" target="_blank">WEBEREI XIII</a>, which produces beautiful textile art.</p>
+<div class="placeholder_img"><video autoplay="true" loop="" mute="" muted=""> <source src="img/piedralobos_lower.mp4" type="video/mp4"/></video></div>
+<p class="text_content_p1">During 2004-2015 I created video and installation art with my friends as <a href="incas/index.html" target="_blank">INCAS OF EMERGENCY</a>.</p>
+<div id="sound"></div>
+<div class="placeholder_img"><video autoplay="true" loop="" mute="" muted=""> <source src="img/IG2_02.mp4" type="video/mp4"/></video></div>
+<p class="text_content_p1">I've done sound design and music for audiovisual projects, such as <a href="https://vimeo.com/259882799?fbclid=IwAR0zsRr_Rm7CpdaLWcgGGrJYqciaLwtk_IMVYJSFvRomjL3Xlk6L4MXMlP0" target="_blank">The Diary of Miss Menses</a>. You can find my music as LOWCORE on <a href="https://open.spotify.com/artist/5VeaMsGYB46htPPlaIhG5S?si=BCcvQLx5SnKKjkXPyLyuQg" target="_blank">Spotify</a>, <a href="https://soundcloud.com/lowcore/" target="_blank">Soundcloud</a> or <a href="https://coherentsound.bandcamp.com/" target="_blank">Bandcamp</a>.</p>
+<div id="teaching"></div>
+<div class="placeholder_img"><video autoplay="true" loop="" mute="" muted=""> <source src="img/zilleruelo_uvm_low.mp4" type="video/mp4"/></video></div>
+<p class="text_content_p1">I've been a teacher of technologies for the arts and design at <a href="https://www.uvm.cl/" target="_blank">UVM</a>, <a href="https://www.uniacc.cl/" target="_blank">UNIACC</a> and <a href="http://www.arcos.cl/" target="_blank">ARCOS</a> in Chile.</p>
+<p class="text_content_p1">There, I was able to teach from creative coding with <a href="https://processing.org/" target="_blank">Processing</a> and <a href="https://www.arduino.cc/" target="_blank">Arduino</a> to several tools of the Adobe Creative Suite. I also got to guide Visual Arts students in their Bachelor Thesis process.</p>
+<div id="web"></div>
+<div class="placeholder_img"><img src="img/interface1.png"/></div>
+<p class="text_content_p1">I have been a designer at <a href="https://www.plinga.com/en/" target="_blank">plinga</a>, <a href="https://www.home24.de/" target="_blank">home24</a> and <a href="https://bookingkit.net/" target="_blank">bookingkit</a>, all thriving internet companies from Berlin.</p>
+<p class="text_content_p1">My focus there was web design, graphic design and UX/UI.</p>
+<div id="art"></div>
+<div class="placeholder_img"><img src="img/map002.jpg"/></div>
+<p class="text_content_p1">During my Masters in Geography at the Architecture Faculty of Universidad de Chile, I was an associate researcher at <a href="https://www.uchile.cl/portal/investigacion/centros-y-programas/institutos-de-facultad/8178/instituto-de-la-vivienda" target="_blank">INVI</a>, where I developed projects linking Arts and Geography through creative mapping technologies.</p>
+<div id="education"></div>
+<div class="placeholder_img"><img src="img/img_5201.JPG"/></div>
+<p class="text_content_p1">I'm grateful to have been able to study in diverse academic environments, such as:</p>
+<ul style="margin-left: -1em;">
+<li class="text_content_p1 edu_list">Bachelor in Visual Arts at <a href="https://www.uc.cl/" target="_blank">Universidad Católica de Chile</a>.</li>
+<li class="text_content_p1 edu_list">Masters in Multimedia Design, <a href="https://www.unifi.it/" target="_blank">Università degli Studi di Firenze</a>.</li>
+<li class="text_content_p1 edu_list">Diploma in Critical and Cultural Journalism, <a href="http://www.icei.uchile.cl/" target="_blank">Instituto de la Comunicación e Imagen Universidad de Chile</a>.</li>
+<li class="text_content_p1 edu_list">Masters in Geography, <a href="http://www.fau.uchile.cl/" target="_blank">Facultad de Arquitectura y Urbanismo Universidad de Chile</a>.</li>
+<li class="text_content_p1 edu_list">Course in Cultural Project Management, <a href="https://www.cimdata.de/" target="_blank">cimdata Akademie</a>.</li>
+</ul>
+</div>
+<footer>
+<p class="text_content_p1 footer_text">This site was handwritten with pure HTML, CSS and JavaScript. No libraries used. Optimized for lower bandwidths. ♻ ☮ ☯ ⚑</p>
+</footer>
+</body>
+</html>
