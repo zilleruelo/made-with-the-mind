@@ -100,11 +100,13 @@ body {
 }
 
 .separator_line {
-	width:30%;
+	width:100%;
 	margin:0 auto;
 	text-align:center;
 	height: 4px;
 	background-color: black;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 
