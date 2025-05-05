@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Felipe Z
+  </title>
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap" rel="stylesheet"/>
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <script type="text/javascript">
+   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+	function toggleMenu() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+  </script>
+  <script>
+   function toggleLanguage() {
+  var enElements = document.querySelectorAll('.lang-en');
+  var esElements = document.querySelectorAll('.lang-es');
+  var currentLang = document.getElementById('langToggle').textContent;
+
+  if (currentLang === 'ES') {
+    // Mostrar español
+    enElements.forEach(el => el.style.display = 'none');
+    esElements.forEach(el => el.style.display = 'inline');
+    document.getElementById('langToggle').textContent = 'EN';
+  } else {
+    // Mostrar inglés
+    enElements.forEach(el => el.style.display = 'inline');
+    esElements.forEach(el => el.style.display = 'none');
+    document.getElementById('langToggle').textContent = 'ES';
+  }
+}
+  </script>
+ </head>
+ <body>
+  <div class="site_wrapper">
+   <a name="top">
+   </a>
+   <div class="back_topnav">
+   </div>
+   <!-- Top Navigation Menu -->
+   <div class="topnav_wrapper">
+    <div class="topnav">
+     <div class="topnav_icon">
+      <a class="active top_title_icon" href="#home">
+       ☙☙☙ Felipe Z.
+      </a>
+      <!--☙☙☙-->
+      <!--<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+				    	<i class="fa fa-bars"></i>
+				  	</a>-->
+      <button id="langToggle" onclick="toggleLanguage()" style="font-family: 'Alata'; font-size: 20px; background: none; border: none; cursor: pointer;">
+       ES
+      </button>
+     </div>
+    </div>
+    <div class="topnav topnav_menu" id="myLinks" style="display: none;text-align: right;">
+     <a href="#top" onclick="toggleMenu()">
+      home
+     </a>
+     <a href="#section_1" onclick="toggleMenu()">
+      art
+     </a>
+     <a href="#section_2" onclick="toggleMenu()">
+      sound
+     </a>
+     <a href="#section_3" onclick="toggleMenu()">
+      education
+     </a>
+     <a href="#section_4" onclick="toggleMenu()">
+      web
+     </a>
+     <a href="#section_5" onclick="toggleMenu()">
+      about
+     </a>
+    </div>
+    <div class="topnav_bottom_wrapper">
+     <div class="topnav_bottom_line">
+     </div>
+    </div>
+   </div>
+   <br/>
+   <div class="placeholder_img first_img_mob" id="home" style="overflow: hidden;">
+    <video autoplay="true" loop="" mute="" muted="">
+     <source src="img/ig4_low.mp4" type="video/mp4"/>
+    </video>
+   </div>
+   <!--Text about my general endeavours with a focus on arty stuff and <a href="#">a link</a> or <a href="#">many links</a> to some projects.-->
+   <p class="text_content_p1">
+    <span class="lang-en">
+     I'm an interdisciplinarian with a background in arts, creative technologies and critical thinking. Specialized in how Artificial Intelligence can be used to fuel creative processes, I live and work in Berlin.
+    </span>
+    <span class="lang-es" style="display:none;">
+     Soy un interdisciplinario con formación en artes, tecnologías creativas y pensamiento crítico.
+    </span>
+   </p>
+   <div class="separator_line">
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     CURRENT PROJECTS:
+    </span>
+    <span class="lang-es" style="display:none;">
+     PROYECTOS ACTUALES:
+    </span>
+   </p>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     AI coded: TB-303 Triple SynthAI coded: InfinyAcid-030AI generated comics
+    </span>
+    <span class="lang-es" style="display:none;">
+     AI coded: TB-303 Triple SynthAI coded: InfinyAcid-030AI generated comics
+    </span>
+   </p>
+   <div class="separator_line">
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     Currently I'm the Production Manager for the EMEA region atShuttlerock.
+    </span>
+    <span class="lang-es" style="display:none;">
+     Currently I'm the Production Manager for the EMEA region atShuttlerock.
+    </span>
+   </p>
+   <div class="placeholder_img">
+    <img src="img/ace_of_calix_square.jpg"/>
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     Before that, I was the Digital Art Director atWEBEREI XIII, which produces beautiful textile art.
+    </span>
+    <span class="lang-es" style="display:none;">
+     Before that, I was the Digital Art Director atWEBEREI XIII, which produces beautiful textile art.
+    </span>
+   </p>
+   <div class="placeholder_img">
+    <video autoplay="true" loop="" mute="" muted="">
+     <source src="img/piedralobos_lower.mp4" type="video/mp4"/>
+    </video>
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     During 2004-2015 I created video and installation art with my friends asINCAS OF EMERGENCY.
+    </span>
+    <span class="lang-es" style="display:none;">
+     During 2004-2015 I created video and installation art with my friends asINCAS OF EMERGENCY.
+    </span>
+   </p>
+   <div id="sound">
+   </div>
+   <div class="placeholder_img">
+    <video autoplay="true" loop="" mute="" muted="">
+     <source src="img/IG2_02.mp4" type="video/mp4"/>
+    </video>
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     I've done sound design and music for audiovisual projects, such asThe Diary of Miss Menses. You can find my music as LOWCORE onSpotify,SoundcloudorBandcamp.
+    </span>
+    <span class="lang-es" style="display:none;">
+     I've done sound design and music for audiovisual projects, such asThe Diary of Miss Menses. You can find my music as LOWCORE onSpotify,SoundcloudorBandcamp.
+    </span>
+   </p>
+   <div id="teaching">
+   </div>
+   <div class="placeholder_img">
+    <video autoplay="true" loop="" mute="" muted="">
+     <source src="img/zilleruelo_uvm_low.mp4" type="video/mp4"/>
+    </video>
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     I've been a teacher of technologies for the arts and design atUVM,UNIACCandARCOSin Chile.
+    </span>
+    <span class="lang-es" style="display:none;">
+     I've been a teacher of technologies for the arts and design atUVM,UNIACCandARCOSin Chile.
+    </span>
+   </p>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     There, I was able to teach from creative coding withProcessingandArduinoto several tools of the Adobe Creative Suite. I also got to guide Visual Arts students in their Bachelor Thesis process.
+    </span>
+    <span class="lang-es" style="display:none;">
+     There, I was able to teach from creative coding withProcessingandArduinoto several tools of the Adobe Creative Suite. I also got to guide Visual Arts students in their Bachelor Thesis process.
+    </span>
+   </p>
+   <div id="web">
+   </div>
+   <div class="placeholder_img">
+    <img src="img/interface1.png"/>
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     I have been a designer atplinga,home24andbookingkit, all thriving internet companies from Berlin.
+    </span>
+    <span class="lang-es" style="display:none;">
+     I have been a designer atplinga,home24andbookingkit, all thriving internet companies from Berlin.
+    </span>
+   </p>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     My focus there was web design, graphic design and UX/UI.
+    </span>
+    <span class="lang-es" style="display:none;">
+     Mi enfoque ahí fue diseño web, diseño gráfico y UX/UI.
+    </span>
+   </p>
+   <div id="art">
+   </div>
+   <div class="placeholder_img">
+    <img src="img/map002.jpg"/>
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     During my Masters in Geography at the Architecture Faculty of Universidad de Chile, I was an associate researcher atINVI, where I developed projects linking Arts and Geography through creative mapping technologies.
+    </span>
+    <span class="lang-es" style="display:none;">
+     During my Masters in Geography at the Architecture Faculty of Universidad de Chile, I was an associate researcher atINVI, where I developed projects linking Arts and Geography through creative mapping technologies.
+    </span>
+   </p>
+   <div id="education">
+   </div>
+   <div class="placeholder_img">
+    <img src="img/img_5201.JPG"/>
+   </div>
+   <p class="text_content_p1">
+    <span class="lang-en">
+     I'm grateful to have been able to study in diverse academic environments, such as:
+    </span>
+    <span class="lang-es" style="display:none;">
+     Estoy agradecido de haber podido estudiar en diversos entornos académicos, tales como:
+    </span>
+   </p>
+   <ul style="margin-left: -1em;">
+    <li class="text_content_p1 edu_list">
+     Bachelor in Visual Arts at
+     <a href="https://www.uc.cl/" target="_blank">
+      Universidad Católica de Chile
+     </a>
+     .
+    </li>
+    <li class="text_content_p1 edu_list">
+     Masters in Multimedia Design,
+     <a href="https://www.unifi.it/" target="_blank">
+      Università degli Studi di Firenze
+     </a>
+     .
+    </li>
+    <li class="text_content_p1 edu_list">
+     Diploma in Critical and Cultural Journalism,
+     <a href="http://www.icei.uchile.cl/" target="_blank">
+      Instituto de la Comunicación e Imagen Universidad de Chile
+     </a>
+     .
+    </li>
+    <li class="text_content_p1 edu_list">
+     Masters in Geography,
+     <a href="http://www.fau.uchile.cl/" target="_blank">
+      Facultad de Arquitectura y Urbanismo Universidad de Chile
+     </a>
+     .
+    </li>
+    <li class="text_content_p1 edu_list">
+     Course in Cultural Project Management,
+     <a href="https://www.cimdata.de/" target="_blank">
+      cimdata Akademie
+     </a>
+     .
+    </li>
+   </ul>
+  </div>
+  <footer>
+   <p class="text_content_p1 footer_text">
+    <span class="lang-en">
+     This site was handwritten with pure HTML, CSS and JavaScript. No libraries used. Optimized for lower bandwidths. ♻ ☮ ☯ ⚑
+    </span>
+    <span class="lang-es" style="display:none;">
+     This site was handwritten with pure HTML, CSS and JavaScript. No libraries used. Optimized for lower bandwidths. ♻ ☮ ☯ ⚑
+    </span>
+   </p>
+  </footer>
+ </body>
+</html>
