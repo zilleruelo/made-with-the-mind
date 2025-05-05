@@ -2,46 +2,44 @@
 
 <html>
   <head>
-  <title>Felipe Z</title>
-  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
-  <link href="style.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap" rel="stylesheet"/>
+    <title>Felipe Z</title>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script type="text/javascript">
+      function toggleMenu() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
 
-  <script type="text/javascript">
-  	/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-  	function toggleMenu() {
-  	  var x = document.getElementById("myLinks");
-  	  if (x.style.display === "block") {
-  	    x.style.display = "none";
-  	  } else {
-  	    x.style.display = "block";
-  	  }
-  	}
+      function toggleLanguage() {
+        var enElements = document.querySelectorAll('.lang-en');
+        var esElements = document.querySelectorAll('.lang-es');
+        var currentLang = document.getElementById('langToggle').textContent;
 
-  </script>
+        if (currentLang === 'ES') {
+          enElements.forEach(el => el.style.display = 'none');
+          esElements.forEach(el => el.style.display = 'inline');
+          document.getElementById('langToggle').textContent = 'EN';
+        } else {
+          enElements.forEach(el => el.style.display = 'inline');
+          esElements.forEach(el => el.style.display = 'none');
+          document.getElementById('langToggle').textContent = 'ES';
+        }
+      }
 
-  <script>
-  function toggleLanguage() {
-    var enElements = document.querySelectorAll('.lang-en');
-    var esElements = document.querySelectorAll('.lang-es');
-    var currentLang = document.getElementById('langToggle').textContent;
-
-    if (currentLang === 'ES') {
-      // Mostrar español
-      enElements.forEach(el => el.style.display = 'none');
-      esElements.forEach(el => el.style.display = 'inline');
-      document.getElementById('langToggle').textContent = 'EN';
-    } else {
-      // Mostrar inglés
-      enElements.forEach(el => el.style.display = 'inline');
-      esElements.forEach(el => el.style.display = 'none');
-      document.getElementById('langToggle').textContent = 'ES';
-    }
-  }
-  </script>
+      // Ocultar español al cargar
+      window.addEventListener('DOMContentLoaded', function () {
+        var esElements = document.querySelectorAll('.lang-es');
+        esElements.forEach(el => el.style.display = 'none');
+      });
+    </script>
   </head>
 
 
