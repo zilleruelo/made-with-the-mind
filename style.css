@@ -99,6 +99,22 @@ body {
 	/*border-bottom: 4px solid black*/
 }
 
+.topnav_title_lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 10px;
+}
+
+#langToggle {
+  font-family: 'Alata', sans-serif;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .separator_line {
 	width:100%;
 	margin:0 auto;
