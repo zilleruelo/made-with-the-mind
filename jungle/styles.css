@@ -12,14 +12,20 @@ body {
   padding: 20px;
 }
 
-/* Header */
+/* Header fijo */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #111;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
   gap: 10px;
+  padding: 10px 0; /* 10px arriba y abajo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
