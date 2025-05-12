@@ -44,6 +44,37 @@ nav a:first-child {
   margin-left: 0;
 }
 
+/* Página estilo Linktree */
+.linktree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.link-button {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  background-color: #222;
+  color: yellow;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.link-button:hover {
+  background-color: #333;
+  transform: scale(1.02);
+}
+
+
 /* Galería tipo masonry */
 .gallery {
   display: grid;
