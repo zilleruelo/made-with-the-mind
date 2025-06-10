@@ -1,0 +1,190 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  line-height: 1.5;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+header.history-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #f9f9f9;
+  gap: 2rem;
+}
+
+.history-highlight .text {
+  flex: 1 1 300px;
+}
+
+.history-highlight .images {
+  flex: 1 1 300px;
+}
+
+.main-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.thumbs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.thumbs img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.topic {
+  padding: 2rem;
+}
+
+.topic h2 {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 100px;
+}
+
+.instagram-banner {
+  background: #0066ff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.recommended {
+  padding: 2rem;
+}
+
+.recommended h2 {
+  margin-bottom: 1rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-track img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.carousel button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.color-select {
+  padding: 2rem;
+  text-align: center;
+}
+
+.color-select h2 {
+  margin-bottom: 0.5rem;
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.color {
+  width: 50px;
+  height: 100px;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0.75rem;
+  padding: 4px;
+}
+
+.exhibit {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  background: #f4f4f4;
+}
+
+.exhibit .text {
+  flex: 1 1 300px;
+}
+
+.exhibit img {
+  flex: 1 1 300px;
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.exhibit button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .carousel-track img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .color {
+    width: 40px;
+    height: 80px;
+  }
+
+  .exhibit {
+    flex-direction: column;
+  }
+
+  header.history-highlight {
+    flex-direction: column;
+  }
+}

@@ -1,5 +1,13 @@
 body {		
 	background-color: #ffffff;
+	font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  line-height: 1.5;
 }
 
 ::selection {
@@ -57,7 +65,7 @@ body {
   padding: 12px 16px;
   padding-right: 8px;
   text-decoration: none;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Inter', sans-serif;
   display: block;
   margin-right: 5%;
 }
@@ -108,7 +116,7 @@ body {
 }
 
 #langToggle {
-  font-family: 'Alata', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   background: none;
   border: none;
@@ -151,12 +159,12 @@ body {
 }
 
 .text_content_h1 {
-	font-family: 'Alata', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 80px;
 }
 
 .text_content_p1 {
-	font-family: 'Alata', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 40px;
 	    margin-top: 0;
 }
