@@ -48,7 +48,7 @@
 
 
   <script>
-    const totalPages = 14; // Cambia este número según cuántas páginas tenga el cómic
+    const totalPages = 9; // Cambia este número según cuántas páginas tenga el cómic
     let currentPage = 1;
 
     const imageElement = document.getElementById("comic-image");
@@ -57,7 +57,7 @@
     const nextBtn = document.getElementById("next-btn");
 
     function updatePage() {
-      imageElement.src = `comic3/page${currentPage}.png`;
+      imageElement.src = `comic4/page${currentPage}.png`;
       imageElement.alt = `Page ${currentPage}`;
       pageIndicator.textContent = `Page ${currentPage}`;
 
