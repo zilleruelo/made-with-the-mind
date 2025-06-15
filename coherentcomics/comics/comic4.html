@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coherent Comics: COVENANT CENTURY</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>COVENANT CENTURY</h1>
+    <nav><a href="../index.html">← Coherent Comics</a></nav>
+  </header>
+<!--
+  <main class="comic-pages">
+    <img id="comic-image" src="comic1/page1.png" alt="Página 1">
+  </main>
+-->
+  <main class="comic-viewer-grid">
+    <button id="prev-btn" class="side-button">←</button>
+    <div class="image-container">
+      <img id="comic-image" src="comic4/page1.png" alt="Página 1">
+    </div>
+    <button id="next-btn" class="side-button">→</button>
+  </main>
+
+
+  <div class="navigation">
+    <!-- <button id="prev-btn">←</button> -->
+    <span id="page-indicator">Page 1</span>
+    <!-- <button id="next-btn">→</button> -->
+  </div>
+
+  <footer>
+    <p>
+      &copy; Coherent Comics &nbsp;|&nbsp;
+      <a href="https://instagram.com/coherentcomics" target="_blank" rel="noopener">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512" aria-hidden="true">
+          <path fill="currentColor" d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.29-30.29C290.6,122.67,224,122.67,224,122.67s-66.6,0-94.42,8.74a54,54,0,0,0-30.29,30.29C91.34,159.4,91.34,224,91.34,224s0,66.6,8.74,94.42a54,54,0,0,0,30.29,30.29c27.81,8.74,94.42,8.74,94.42,8.74s66.6,0,94.42-8.74a54,54,0,0,0,30.29-30.29c8.74-27.81,8.74-94.42,8.74-94.42S357.45,159.4,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338Zm85.33-148.09a19.2,19.2,0,1,1,19.2-19.2A19.21,19.21,0,0,1,309.33,189.91Z"/>
+        </svg>
+        Instagram
+      </a>
+    </p>
+  </footer>
+
+
+  <script>
+    const totalPages = 14; // Cambia este número según cuántas páginas tenga el cómic
+    let currentPage = 1;
+
+    const imageElement = document.getElementById("comic-image");
+    const pageIndicator = document.getElementById("page-indicator");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    function updatePage() {
+      imageElement.src = `comic3/page${currentPage}.png`;
+      imageElement.alt = `Page ${currentPage}`;
+      pageIndicator.textContent = `Page ${currentPage}`;
+
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updatePage();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        updatePage();
+      }
+    });
+
+    updatePage(); // Inicializar
+  </script>
+</body>
+</html>
