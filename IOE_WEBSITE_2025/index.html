@@ -56,9 +56,17 @@
     <div class="carousel" id="carousel">
       <div class="carousel-track">
         <img src="img/Dsc02557.jpg" alt="art1">
-        <img src="img/Dsc02557.jpg" alt="art2">
+        <img src="img/noname_4.jpg" alt="art2">
         <img src="img/Dsc02557.jpg" alt="art3">
-        <img src="img/Dsc02557.jpg" alt="art4">
+        <img src="img/noname_4.jpg" alt="art4">
+        <img src="img/Dsc02557.jpg" alt="art1">
+        <img src="img/noname_4.jpg" alt="art2">
+        <img src="img/Dsc02557.jpg" alt="art3">
+        <img src="img/noname_4.jpg" alt="art4">
+        <img src="img/Dsc02557.jpg" alt="art1">
+        <img src="img/noname_4.jpg" alt="art2">
+        <img src="img/Dsc02557.jpg" alt="art3">
+        <img src="img/noname_4.jpg" alt="art4">
       </div>
       <button onclick="scrollCarousel()">→</button>
     </div>
@@ -89,39 +97,44 @@
     <img src="img/Dsc02557.jpg" alt="de kooning">
   </section>
 
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">×</span>
+    <img class="modal-content" id="modalImage" alt="zoomed image">
+  </div>
+
+  <!-- Scripts -->
   <script>
     function scrollCarousel() {
       const track = document.getElementById('carousel').querySelector('.carousel-track');
       track.scrollBy({ left: 300, behavior: 'smooth' });
     }
-  </script>
 
-  <script>
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImage");
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
 
-  document.querySelectorAll(".carousel-track img").forEach(img => {
-    img.addEventListener("click", () => {
-      modal.style.display = "block";
-      modalImg.src = img.src;
+      document.querySelectorAll(".carousel-track img").forEach(img => {
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+      });
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      // Close when clicking outside or on close button
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal || e.target.classList.contains("modal-close")) {
+          closeModal();
+        }
+      });
+
+      window.closeModal = closeModal; // Make it accessible to onclick
     });
-  });
-
-  function closeModal() {
-    modal.style.display = "none";
-  }
-
-  // Optional: close modal when clicking outside the image
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) closeModal();
-  });
-</script>
-
-
-<div id="imageModal" class="modal">
-  <span class="modal-close" onclick="closeModal()">×</span>
-  <img class="modal-content" id="modalImage" alt="zoomed image">
-</div>
+  </script>
 
 </body>
 </html>
