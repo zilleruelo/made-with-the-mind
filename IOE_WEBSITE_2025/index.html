@@ -54,6 +54,7 @@
   <section class="recommended">
     <h2>Selected weorks</h2>
     <div class="carousel" id="carousel">
+      <button onclick="scrollCarouselLeft()">←</button>
       <div class="carousel-track">
         <img src="img/Dsc02557.jpg" alt="art1">
         <img src="img/noname_4.jpg" alt="art2">
@@ -110,6 +111,11 @@
       track.scrollBy({ left: 300, behavior: 'smooth' });
     }
 
+    function scrollCarouselLeft() {
+      const track = document.getElementById('carousel').querySelector('.carousel-track');
+      track.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
     document.addEventListener("DOMContentLoaded", function () {
       const modal = document.getElementById("imageModal");
       const modalImg = document.getElementById("modalImage");
@@ -125,14 +131,13 @@
         modal.style.display = "none";
       }
 
-      // Close when clicking outside or on close button
       modal.addEventListener("click", function (e) {
         if (e.target === modal || e.target.classList.contains("modal-close")) {
           closeModal();
         }
       });
 
-      window.closeModal = closeModal; // Make it accessible to onclick
+      window.closeModal = closeModal;
     });
   </script>
 
