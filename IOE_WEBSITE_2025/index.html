@@ -96,5 +96,32 @@
     }
   </script>
 
+  <script>
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+
+  document.querySelectorAll(".carousel-track img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Optional: close modal when clicking outside the image
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) closeModal();
+  });
+</script>
+
+
+<div id="imageModal" class="modal">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img class="modal-content" id="modalImage" alt="zoomed image">
+</div>
+
 </body>
 </html>

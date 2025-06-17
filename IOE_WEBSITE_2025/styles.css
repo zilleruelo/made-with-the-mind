@@ -168,6 +168,41 @@ header.history-highlight {
   cursor: pointer;
 }
 
+/* Modal base styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding: 2rem;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+
 /* Responsive adjustments */
 
 @media (max-width: 768px) {
