@@ -1,3 +1,10 @@
+Aquí tienes el **CSS completo actualizado** (`styles.css`) con soporte para `.card` como enlaces (`<a>`), manteniendo el estilo visual original y agregando mejoras sutiles al hover:
+
+---
+
+### ✅ `styles.css`
+
+```css
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -59,12 +66,28 @@ header.history-highlight {
   gap: 1rem;
 }
 
+/* Tarjetas como enlaces */
 .card {
-  background: #eee;
+  background: #f7f15f;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
   padding: 1rem;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   min-height: 100px;
   margin-bottom: 1rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+}
+
+.card:hover {
+  background: #fff56b;
+}
+
+.card:hover,
+.card:hover span {
+  color: white;
 }
 
 .instagram-banner {
@@ -106,10 +129,19 @@ header.history-highlight {
   margin-left: 1rem;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
 }
 
 .carousel button:first-of-type {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
+}
+
+.carousel button:last-of-type {
+  margin-left: 1.5rem;
 }
 
 .color-select {
@@ -172,7 +204,7 @@ header.history-highlight {
   cursor: pointer;
 }
 
-/* Modal base styles */
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -206,9 +238,7 @@ header.history-highlight {
   user-select: none;
 }
 
-
-/* Responsive adjustments */
-
+/* Responsive */
 @media (max-width: 768px) {
   .carousel-track img {
     width: 150px;
@@ -228,3 +258,6 @@ header.history-highlight {
     flex-direction: column;
   }
 }
+```
+
+¿Quieres que agregue animaciones, accesibilidad (por ejemplo, foco visible para teclado), o navegación entre tarjetas con teclado más adelante? Puedo ayudarte.
