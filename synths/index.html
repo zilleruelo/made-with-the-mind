@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Screen</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+    }
+    img {
+      opacity: 0;
+      width: 80%;
+      max-width: 400px;
+      margin-top: 10vh;
+      transition: opacity 1s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <img id="splashImage" src="pokefz.png" alt="Splash Image">
+  <script>
+    window.onload = function() {
+      const img = document.getElementById('splashImage');
+      setTimeout(() => img.style.opacity = 1, 100); // inicio del fade-in
+      setTimeout(() => {
+        window.location.href = "https://tb-303-triple-synth-alnt.bolt.host"; // URL de destino
+      }, 3000); // redirección a los 3 segundos
+    };
+  </script>
+</body>
+</html>
