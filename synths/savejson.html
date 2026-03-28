@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+  </style>
+</head>
+<body>
+<p>
+const dump = {};
+
+for (let i = 0; i < localStorage.length; i++) {
+const key = localStorage.key(i);
+dump[key] = localStorage.getItem(key)
+}
+
+const blob = new Blob([JSON.stringify(dump, null, 2)], { type: 'application/json' });
+const a = document.createElement('a');
+a.href = URL.createObjectURL(blob);
+a.download = 'laguna-localStorage-export.json';
+a.click();
+</p>
+</body>
+</html>
